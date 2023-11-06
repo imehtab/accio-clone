@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+}
+
+head {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+}
+#headlist {
+  display: flex;
+  background-color: white;
+  color: var(--Gray-2, #4f4f4f);
+  font-size: 17px;
+  align-items: center;
+  justify-content: end;
+  margin: 14px 0px 14px 0px;
+}
+
+#start {
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 0px 80px;
+  justify-content: start;
+  width: 50%;
+}
+
+#secStart {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.headtext {
+  margin: 0px 20px 0px 16px;
+  cursor: pointer;
+}
+
+.svg {
+  margin: 0px 0px 0px -22px;
+  cursor: pointer;
+}
+#accio {
+  color: #012555;
+  font-size: 21.714px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px; /* 175% */
+  letter-spacing: -0.869px;
+  margin: 0px 3px 0px 3px;
+  cursor: pointer;
+}
+
+#line {
+  width: 1px;
+  height: 32px;
+  background: #dadada;
+  color: #dadada;
+}
+
+.arrowbox {
+  display: flex;
+  color: #4f4f4f;
+}
+
+#buttom {
+  display: flex;
+  padding: 8px 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-left: 20px;
+  gap: 10px;
+  color: blue;
+  border-radius: 8px;
+  border: 2px solid var(--primaryskyblue, #2f80ed);
+  cursor: pointer;
+}
+
+#blueLine {
+  display: flex;
+  color: #ffffff;
+  background-color: rgb(46, 129, 237);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+  letter-spacing: 0.28px;
+  justify-content: center;
+  align-items: center;
+  height: 4vh;
+}
+
+#subhead li:hover a {
+  background: rgb(224, 224, 224);
+}
+
+#subOption {
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  z-index: 1;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+li:hover ul#subOption {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+#subOption a:hover {
+  background-color: #e4e4e4;
+}
+
+.space {
+  margin: 5px;
+}
+
+#loginSection {
+  margin-top: 155px;
+  border: 2px solid green;
+  width: 52%;
+  margin-left: 100px;
+}
+
+#heading {
+  display: flex;
+  flex-wrap: wrap;
+  width: 35vw;
+  font-size: 25px;
+}
+#subheading {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+#fullstackdev {
+  color: rgb(49, 129, 236);
+}
+
+#features {
+  border: 2px solid green;
+  display: flex;
+  margin-top: 35px;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-around;
+
+  align-items: center;
+  justify-content: space-around;
+}
+.subfeatures {
+  display: flex;
+}
+
+#logo {
+  margin-left: -28px;
+  margin-top: 7px;
+}
+
+#lakh {
+}
+@media screen and (max-width: 992px) {
+  #headlist {
+    display: flex;
+    background-color: white;
+    color: var(--Gray-2, #4f4f4f);
+    font-size: 17px;
+    align-items: center;
+    justify-content: end;
+  }
+  #start {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 40px;
+    justify-content: start;
+    width: 50%;
+  }
+  #secStart {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #headlist {
+    display: flex;
+    background-color: white;
+    color: var(--Gray-2, #4f4f4f);
+    font-size: 17px;
+    align-items: center;
+    justify-content: end;
+  }
+  #start {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 20px;
+    justify-content: start;
+    width: 40%;
+  }
+  #secStart {
+    display: flex;
+    align-items: right;
+    width: 63%;
+    /* margin-left: 50px; */
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #headlist {
+    display: block;
+    background-color: white;
+    color: var(--Gray-2, #4f4f4f);
+    font-size: 17px;
+    align-items: center;
+    justify-content: end;
+  }
+  #start {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 20px;
+    justify-content: center;
+    width: 90%;
+  }
+  #secStart {
+    display: flex;
+    align-items: right;
+    margin-top: 5px;
+    width: 100%;
+    font-size: 15px;
+  }
+}
