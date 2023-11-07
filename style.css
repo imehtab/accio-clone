@@ -74,7 +74,7 @@ head {
   color: #4f4f4f;
 }
 
-#buttom {
+#button1 {
   display: flex;
   padding: 8px 30px;
   justify-content: center;
@@ -130,53 +130,161 @@ li:hover ul#subOption {
   margin: 5px;
 }
 
-#loginSection {
-  margin-top: 155px;
-  border: 2px solid green;
-  width: 52%;
-  margin-left: 100px;
+
+#headings{
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  height: 45vh;
+  margin-left: 120px;
+  width: 50vw;
 }
 
-#heading {
+#heading{
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  width: 35vw;
-  font-size: 25px;
-}
-#subheading {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 16px;
-  font-weight: 500;
-  margin-top: 20px;
+  
+  font-size: 23px;
+
 }
 
+#subheading{
+ font-size: 16px; 
+ margin-top: 25px;
+}
+#features{
+  display: flex;
+  border: 1px solid rgb(226,227,227);
+  background-color: rgb(254,255,254);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  height: 8vh;
+
+}
+
+#madewithdil{
+  margin-top: 30px;
+  font-size: 18px;
+}
 #fullstackdev {
   color: rgb(49, 129, 236);
 }
 
-#features {
+#secdiv{
+  display: flex;
+  margin-top: 14vh;
+  height: 48vh;
+  /* border: 2px solid green; */
+}
+
+#login{
   border: 2px solid green;
+  margin-left: 250px;
+  width: 24vw;
+  height: 45vh;
+
+   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+ 
+}
+#learnfree{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
+}
+
+#freehead{
+  font-size: 14px;
   display: flex;
-  margin-top: 35px;
-  height: 10vh;
-  align-items: center;
-  justify-content: space-around;
-
-  align-items: center;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 10px;
+  width: 300px;
 }
-.subfeatures {
+
+#form{
   display: flex;
+  margin-top: 40px;
+  margin-left: 50px;
 }
 
-#logo {
-  margin-left: -28px;
-  margin-top: 7px;
+.namepass{
+display: flex;
+margin: 40px 20px;
+ width: 300px;
+  height: 40px;
+  
 }
 
-#lakh {
+#name{
+  width: 300px;
+ 
+ font-size: 16px;
+  height: 40px;
 }
+#free{
+  color: #2f80ed;
+}
+#button{display: flex;
+  padding: 8px 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  gap: 10px;
+  color: blue;
+  border-radius: 8px;
+  border: 2px solid var(--primaryskyblue, #2f80ed);
+  cursor: pointer;
+}
+
+#button {
+  flex: 1 1 auto;
+  height: 30px;
+  margin-left: 50px;
+  margin-top: 45px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(43, 42, 42);
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+ }
+
+ #button:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+#button {
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+
+#TandC{
+  font-size: 14px;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top:25px;
+  margin-left: 30px;
+}
+
+#terms{
+color: rgb(49, 129, 236);
+text-align: center;
+margin-left: 85px;
+}
+
 @media screen and (max-width: 992px) {
   #headlist {
     display: flex;
@@ -199,6 +307,7 @@ li:hover ul#subOption {
     width: 60%;
     margin-right: 10px;
   }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -224,6 +333,7 @@ li:hover ul#subOption {
     /* margin-left: 50px; */
     font-size: 15px;
   }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -249,4 +359,5 @@ li:hover ul#subOption {
     width: 100%;
     font-size: 15px;
   }
+
 }
